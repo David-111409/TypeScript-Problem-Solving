@@ -9,3 +9,6 @@ console.log(firstLast("shiva"), "sa")
 console.log(firstLast("vishnu"), "vu")
 console.log(firstLast("durga"), "da")
 console.log(firstLast("brahma"), "ba")
+
+
+
