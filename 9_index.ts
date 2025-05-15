@@ -1,25 +1,26 @@
 /*Problem Description: 
-Longest Daily Streak
-
-Create a function that takes an array of booleans 
-that represent whether or not a player has logged into a game that day.
-Output the longest streak of consecutive logged in days.
+Find First Character That Repeats
+Create a function that takes a string and returns the first character that repeats.
+If there is no repeat of a character, return "-1".
 
 Examples
 
-dailyStreak([true, true, false, true]) ➞ 2
+firstRepeat("legolas") ➞ "l"
 
-dailyStreak([false, false, false]) ➞ 0
+firstRepeat("Gandalf") ➞ "a"
 
-dailyStreak([true, true, true, false, true, true]) ➞ 3
+firstRepeat("Balrog") ➞ "-1"
+
+firstRepeat("Isildur") ➞ "-1"
+// Case sensitive "I" not equal to "i"
 
 Notes
-Return your output as an integer.
-If a given array is all false, return 0 (see example #2).
+Tests are case sensitive.
  */
 
 // This is a slower solution
 export function firstRepeat2(str:string):string{
+    
     for (let i = 0 ; i < str.length - 1; i++){
         for (let j = i+1; j < str.length; j++)
             if ( str[i] === str[j]) return str[i];
