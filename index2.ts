@@ -20,8 +20,8 @@ solutions(1, 0, 1) ➞ 0
 
 Notes
 
-You do not have to calculate the solutions, just return how many there are.
-a will always be non-zero.
+-You do not have to calculate the solutions, just return how many there are.
+-a will always be non-zero.
  */
 
 type val = 0 | 1 | 2;
