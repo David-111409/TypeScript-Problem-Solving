@@ -31,13 +31,10 @@ export function duplicateCount(str:string) {
     }
 
    for (let [_, valueCount] of mapping) {
-
-    if (valueCount >= 2)  
+    if (valueCount > 1)  
         count ++;
-
    }
     
-
    return count;
 
     
