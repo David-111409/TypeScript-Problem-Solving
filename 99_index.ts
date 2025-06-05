@@ -16,8 +16,8 @@ Both arrays will contain only unique values.
  */
 
 
-export function isSubset(ar1 :number[], ar2:number[]){
-    let set = new Set (ar2);
+export function isSubset(ar1 :number[], ar2:number[]):boolean{
+    let set = new Set<number> (ar2);
   
     for (let num of ar1){
         if (!set.has(num)) return false;;
